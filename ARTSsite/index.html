@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Let browser know website is optimized for mobile-->
+	<link rel="icon" type="image/png" href="img/MyIcon.ico"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+</head>
+
+
+<body class="white">
+
+    <div class="bannerin">
+        <img src = "img/bloody.jpg" class="bannerimg">
+        <img src = "img/blue.gif" class="bannerimg">
+        <img src = "img/police.gif" class="bannerimg">
+        <img src = "img/pop.jpg" class="bannerimg">
+        <img src = "img/purple.jpg" class="bannerimg">
+        <img src = "img/orange.jpg" class="bannerimg">
+        <img src = "img/fiat.jpg" class="bannerimg">
+    </div>
+    <div class="main">
+        <div class="upright">
+            <a class="NAME">Shelest Sergei</a>
+            <a>10 IBDP</a>
+        </div>
+        <div class="uprightdown">
+        </div>
+        <div class="uzor">
+            <div class="br brick1">
+            </div>
+            <div class="br brick1down">
+            </div>
+            <div class="br brick2">
+            </div>
+            <div class="br brick3">
+            </div>
+                <div class="br brickk1">
+                </div>
+                 <div class="br brickk1down">
+                </div>
+                <div class="br brickk2">
+                </div>
+                 <div class="br brickk2down">
+                </div>
+                <div class="br brickk3">
+                </div>
+
+            <div class="br bbrick1">
+            </div>
+            <div class="br bbrick1down">
+            </div>
+            <div class="br bbrick2">
+            </div>
+            <div class="br bbrick3">
+            </div>
+                <div class="br bbrickk1">
+                </div>
+                 <div class="br bbrickk1down">
+                </div>
+                <div class="br bbrickk2">
+                </div>
+                 <div class="br bbrickk2down">
+                </div>
+                <div class="br bbrickk3">
+                </div>
+        </div>
+        <div class="midleft">
+            <div class = "stripeml sml">
+            </div>
+            <div class = "stripeml sm2"> </div>
+             <div class = "stripeml sm3"> </div>
+             <div class = "stripeml sm4"> </div>
+             <div class = "stripeml sm5"> </div>
+        </div>
+        <div class="midleftdown">
+            <div class = "stripemld smdl">
+            </div>
+            <div class = "stripemld smdd2"> </div>
+             <div class = "stripemld smd3"> </div>
+             <div class = "stripemld smd4"> </div>
+             <div class = "stripemld smd5"> </div>
+        </div>
+            <div class="LILTEXT">
+                <p>_____Mambets from the northern lands of the Kumysnykh Rivers, under the possession of the insane bum-boar Ruslana, were famous for their belligerence and their   </p>
+                <p>_____They drink it in front of battles and fall into koumiss rabies, which allows them to move at a speed of 200 km / h and deliver deadly blows.</p>
+                <p>_____With the help of these abilities, they captured a garbage bin where they strengthened and began to carry .</p>
+            </div>
+            <div class="intttext">
+                <div class="tttext">
+                    /text
+                </div>
+                <div class="ttext">
+                    /text
+                </div>
+                <div class="text">
+                    /text
+                </div>
+            </div>
+        <div class="footer">
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        var main = document.querySelector(".main");
+        var text = document.querySelector(".text");
+        var ttext = document.querySelector(".ttext");
+        var tttext = document.querySelector(".tttext");
+        var midleft = document.querySelector(".midleft");
+        var midleftdown = document.querySelector(".midleftdown");
+        var br = document.querySelectorAll(".br");
+        //main.style.height = screen.height + "px";
+        main.style.height = document.documentElement.clientHeight+ "px";
+        main.style.width = document.documentElement.clientWidth+ "px";
+
+        midleftdown.onclick = function() {
+            midleft.style.transform = 'rotate(' + 45 + 'deg)';
+            midleftdown.style.transform = 'rotate(' + -45 + 'deg)';
+            midleftdown.style.transform.left = 10+"px";
+            text.style.top = "20%";
+            tttext.style.top = "20%";
+            text.style.opacity = "0.8";
+            ttext.style.opacity = "0.8";
+            tttext.style.opacity = "0.8";
+            for (var i = 0; i < br.length ; i++) {
+                br[i].style.top = "10%";
+            }
+        }
+    </script>
+</body>
+
+</html>
