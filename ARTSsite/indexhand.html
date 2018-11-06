@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!--Let browser know website is optimized for mobile-->
+	<link rel="icon" type="image/png" href="img/MyIcon.ico"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link type="text/css" href="css/stylehand.css" rel="stylesheet">
+</head>
+
+
+<body class="white">
+
+    <div class="bannerin">
+        <img src = "img/bloody.jpg" class="bannerimg">
+        <img src = "img/blue.gif" class="bannerimg">
+        <img src = "img/police.gif" class="bannerimg">
+        <img src = "img/pop.jpg" class="bannerimg">
+        <img src = "img/purple.jpg" class="bannerimg">
+        <img src = "img/orange.jpg" class="bannerimg">
+        <img src = "img/fiat.jpg" class="bannerimg">
+    </div>
+    <div class="main">
+        <div class="content">
+            <p class="maintext">OPEN YOUR EYES</p>
+            <div class="maincontent">
+                <div class="word w1"></div>
+                <div class="word w2"></div>
+                <div class="word w3"></div>
+
+                <div class="word w4"></div>
+                <div class="word w5"></div>
+                <div class="word w6"></div>
+
+                <div class="word w7"></div>
+                <div class="word w8"></div>
+                <div class="word w9"></div>
+
+                <div class="word w10"></div>
+                <div class="word w11"></div>
+                <div class="word w12"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bigf"></div> 
+    <div class="mainf inger"></div> 
+    <div class="middlef inger"></div> 
+    <div class="namelessf inger"></div> 
+    <div class="lilf inger"></div>    
+        <div class="footer">
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        var main = document.querySelector(".main");
+        var maincontent = document.querySelector(".maincontent");
+        var inger = document.querySelectorAll(".inger");
+        main.style.height = document.documentElement.clientHeight+ "px";
+        main.style.width = document.documentElement.clientWidth+ "px";
+
+       
+        maincontent.onscroll = function() {
+        var scrolled = maincontent.pageYOffset || document.documentElement.scrollTop;
+        console.log(scrolled);
+        //document.getElementsByClassName('w1').innerHTML = scrolled + 'px';
+        for (var i = 0; i < inger.length ; i++) {
+                inger[i].style.top = 122 + i*2 + "%";
+            }
+        }
+    </script>
+</body>
+
+</html>
